@@ -1,0 +1,123 @@
+*{
+    
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding:0 ;
+}
+body{
+    width: 100%;
+}
+.btnRetour, .btnTelechargement {
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: tomato;
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+   
+    display: flex;
+    justify-content: center;
+    background-color: lightgray;
+}
+table{
+    border-collapse: collapse;
+   margin-top: 40px;
+    width: 90%;
+}
+.coord{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.cv{
+    text-align: center;
+}
+/*   FORMATION    */
+
+.formation ul{
+    margin-top: 25px;
+}
+.formation ul li, .expinfo{
+    display: flex;
+    justify-content: flex-start;
+}
+.formation ul li span{
+    margin-right: 10px;
+}
+
+/*      EXPERIENCE*/
+.experience, .formation,.cv{
+    padding-top: 30px;
+    padding-left: 200px;
+    background-color: white;
+}
+.experience ul{
+    margin-top: 25px;
+}
+.experience ul li:not(.experience ul li ul li) {
+    margin-top: 30px;
+}
+.experience ul li ul li {
+    list-style: disc;
+    margin-top: 5px;
+}
+.expinfo span{ 
+    margin-right: 20px;
+}
+/*   A PROPOS  */
+
+.apropos h3, .competance h3{
+    text-align: center;
+    color: white;
+}
+
+
+.apropos, .competance, .coord{
+    background-color: lightslategray;
+    padding-left: 20px;
+
+}
+
+.competance{
+       margin-top: -70px;
+       margin-bottom: 100px;
+}
+.separation{
+    height: 2px;
+    background-color: rgb(202, 117, 117);
+}
+.sepformation{
+    width:100px ;
+}
+.sepexperience{
+    width: 100px;
+}
+.sepcompetance{
+    margin:0 auto;
+    width: 110px;
+    margin-bottom: 25px;
+}
+.sepapropos{
+    width: 150px;
+    margin:0 auto;
+    margin-bottom: 25px;
+}
+/* responsive */
+@media  screen and (max-width:750px) {
+    .experience, .formation,.cv{
+        padding-left: 60px;
+    }
+}
+@media  screen and (max-width:350px) {
+    .experience, .formation,.cv{
+        padding-left: 15px;
+    }
+}
